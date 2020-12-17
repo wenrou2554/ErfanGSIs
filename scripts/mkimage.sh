@@ -78,6 +78,7 @@ if [[ -f "$tempdir/file_contexts" ]]; then
     echo "/addon.d                u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
     echo "/op_odm                 u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
     echo "/avb                    u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
+    echo "/vgc                    u:object_r:rootfs:s0" >> "$tempdir/file_contexts"
     fcontexts="$tempdir/file_contexts"
 fi
 sudo rm -rf "$systemdir/persist"
